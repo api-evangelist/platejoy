@@ -1,7 +1,24 @@
 aid: platejoy
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/platejoy.png
 name: PlateJoy
-description: PlateJoy is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: PlateJoy is a personalized digital meal-planning and nutrition subscription service
+  that generates customized weekly meal plans, recipes, and auto-built grocery lists from a detailed
+  dietary and lifestyle questionnaire, with grocery-delivery hand-off. Founded in 2012 and later
+  acquired into the Health.com / Dotdash Meredith consumer-health portfolio, it operates as a
+  consumer-facing web and mobile app. As of this enrichment pass PlateJoy exposes no public developer
+  API, OpenAPI, or documentation surface. The apex domain has no live web host and the www endpoint
+  resolves to a dangling AWS load balancer, so only domain-level DNS/email security could be probed.
 url: https://raw.githubusercontent.com/api-evangelist/platejoy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Meal Planning
+- Nutrition
+- Recipes
+- Health
+- Food
+- Grocery
+- Subscription
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/platejoy-domain-security.yml
 - type: Website
   url: https://platejoy.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
